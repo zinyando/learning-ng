@@ -1,0 +1,9 @@
+<ul class="nav">
+    <button [class.active]="viewMode == 'map'" ><a (click)="viewMode = 'map'">Map View</a></button>
+    <button [class.active]="viewMode == 'list'" ><a (click)="viewMode = 'list'">List View</a></button>
+</ul>
+
+<div [ngSwitch]="viewMode">
+    <template [ngSwitchWhen]="'map'" ngSwitchDefault>Map view content</template>
+    <template [ngSwitchWhen]="'list'">List view content</template>
+</div>

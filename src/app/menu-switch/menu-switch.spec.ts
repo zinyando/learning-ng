@@ -10,16 +10,16 @@ import {
   beforeEachProviders
 } from 'angular2/testing';
 import {provide} from 'angular2/core';
-import {Favorite} from './favorite';
+import {MenuSwitch} from './menu-switch';
 
 
-describe('Favorite Component', () => {
+describe('MenuSwitch Component', () => {
 
   beforeEachProviders((): any[] => []);
 
 
   it('should ...', injectAsync([TestComponentBuilder], (tcb:TestComponentBuilder) => {
-    return tcb.createAsync(Favorite).then((fixture) => {
+    return tcb.createAsync(MenuSwitch).then((fixture) => {
       fixture.detectChanges();
     });
   }));

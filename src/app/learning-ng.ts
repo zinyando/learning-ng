@@ -2,13 +2,14 @@ import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 import {CoursesComponent} from './courses.component';
 import {AuthorsComponent} from './authors/authors.component'
+import {MenuSwitch} from './menu-switch/menu-switch'
 
 
 @Component({
   selector: 'learning-ng-app',
   providers: [],
   templateUrl: 'app/learning-ng.html',
-  directives: [CoursesComponent, AuthorsComponent, ROUTER_DIRECTIVES],
+  directives: [CoursesComponent, AuthorsComponent, MenuSwitch, ROUTER_DIRECTIVES],
   pipes: []
 })
 @RouteConfig([
