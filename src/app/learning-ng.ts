@@ -1,12 +1,14 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
+import {CoursesComponent} from './courses.component';
+import {AuthorsComponent} from './authors/authors.component'
 
 
 @Component({
   selector: 'learning-ng-app',
   providers: [],
   templateUrl: 'app/learning-ng.html',
-  directives: [ROUTER_DIRECTIVES],
+  directives: [CoursesComponent, AuthorsComponent, ROUTER_DIRECTIVES],
   pipes: []
 })
 @RouteConfig([
