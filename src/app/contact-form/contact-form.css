@@ -1,0 +1,7 @@
+.contact-form {
+    padding: 50px;
+}
+
+.ng-touched .ng-invalid {
+    border: 1px solid red;
+}
