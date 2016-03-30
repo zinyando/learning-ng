@@ -6,8 +6,8 @@ import {AuthorsService} from './authors.service'
     template: `
     <h2>{{title}}</h2>
     <ul>
-    <li *ngFor="#author of authors">
-        {{author}}
+    <li *ngFor="#author of authors, #i = index">
+        {{i + 1}} - {{author}}
     </li>
     </ul>
     `,

@@ -3,13 +3,15 @@ import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 import {CoursesComponent} from './courses.component';
 import {AuthorsComponent} from './authors/authors.component'
 import {MenuSwitch} from './menu-switch/menu-switch'
+import {ContactForm} from './contact-form/contact-form'
+import {LoginForm} from './login-form/login-form'
 
 
 @Component({
   selector: 'learning-ng-app',
   providers: [],
   templateUrl: 'app/learning-ng.html',
-  directives: [CoursesComponent, AuthorsComponent, MenuSwitch, ROUTER_DIRECTIVES],
+  directives: [CoursesComponent, AuthorsComponent, MenuSwitch, ContactForm, LoginForm, ROUTER_DIRECTIVES],
   pipes: []
 })
 @RouteConfig([

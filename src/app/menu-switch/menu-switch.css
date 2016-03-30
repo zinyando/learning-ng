@@ -1,3 +1,7 @@
-.active {
-    background-color: grey;
+.menu-switch {
+    padding: 50px;
+}
+
+.menu-switch-content {
+    padding-top: 20px;
 }
