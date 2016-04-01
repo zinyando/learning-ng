@@ -1,6 +1,11 @@
 <div class="posts">
-    posts Works!
     <div *ngIf="isLoading">
         <i class="fa fa-spinner fa-spin fa-3x"></i>
+    </div>
+    <div class="post" *ngFor="#post of posts">
+        <div class="single-post">
+            <h2>{{post.title}}</h2>
+            <p>{{post.body}}</p>
+        </div>
     </div>
 </div>

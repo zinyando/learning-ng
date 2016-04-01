@@ -5,13 +5,14 @@ import {AuthorsComponent} from './authors/authors.component'
 import {MenuSwitch} from './menu-switch/menu-switch'
 import {ContactForm} from './contact-form/contact-form'
 import {LoginForm} from './login-form/login-form'
+import {Posts} from './posts/posts'
 
 
 @Component({
   selector: 'learning-ng-app',
   providers: [],
   templateUrl: 'app/learning-ng.html',
-  directives: [CoursesComponent, AuthorsComponent, MenuSwitch, ContactForm, LoginForm, ROUTER_DIRECTIVES],
+  directives: [CoursesComponent, AuthorsComponent, MenuSwitch, ContactForm, LoginForm, Posts, ROUTER_DIRECTIVES],
   pipes: []
 })
 @RouteConfig([

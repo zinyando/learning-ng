@@ -14,6 +14,7 @@ import{OnInit} from 'angular2/core'
 export class Posts implements OnInit{
     
     isLoading = true;
+    posts = [];
 
   constructor(private _postService: PostService) {
   }
@@ -22,6 +23,7 @@ export class Posts implements OnInit{
    this._postService.getPosts()
       .then(posts => {
           this.isLoading = false;
+          this.posts = posts;
           console.log(posts)
         });
   }
