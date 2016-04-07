@@ -1,0 +1,12 @@
+<h2>Albums List</h2>
+
+<ul>
+  <li *ngFor="#albums of albumss">
+    <a
+      [routerLink]="['AlbumsDetail', { id: albums.id }]">
+      <strong>{{albums.id}}</strong>
+      -
+      {{albums.name}}
+    </a>
+  </li>
+</ul>
